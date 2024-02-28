@@ -7,7 +7,7 @@ use Lib\Capcha\ICapcha;
 class ReCapcha implements ICapcha
 {
 
-	private const _SECRET_KEY = '6Lcob3kpAAAAAMRKFAbMqISGBYtrRIy5MRW4NvpP';
+	private const _SECRET_KEY = 'SECRET_KEY';
 
 	public function service(string $token): bool
 	{

@@ -6,9 +6,9 @@ use Lib\Capcha\ICapcha;
 
 class YandexCapcha implements ICapcha
 {
-	private const _SECRET_KEY = 'ysc2_hVuiSk15TIGF2YcMKKGl9KUUc4SW2dZ3nENp9IsWc24a5806';
+	private const _SECRET_KEY = 'SECRET_KEY';
 
-	public function service(string $token): boolean
+	public function service(string $token): bool
 	{
 		if(0 == strlen($token)){
 			return false;
@@ -24,7 +24,7 @@ class YandexCapcha implements ICapcha
 		}
     }
 
-	private function _makeRequest(string $token): boolean
+	private function _makeRequest(string $token): bool
 	{
 		$ch = curl_init();
         $args = http_build_query([

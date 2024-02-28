@@ -1,5 +1,21 @@
 <?php
 
+/*
+
+В init.php подключаем автолоадер
+
+require_once $_SERVER["DOCUMENT_ROOT"] . '/local/php_interface/lib/autoload.php';
+
+и выводим роуты
+
+CModule::AddAutoloadClasses(
+    '',
+    Autoload::ROUTES
+);
+
+*/
+
+
 
 class Autoload
 {
